@@ -1,10 +1,16 @@
+import { useState } from "react";
+
 export const Item = ({ item }) => {
-    const onClick = () =>
-    {
-    };
+
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
 
     return (
-      <li onClick={onClick} className="item centered">
+      <li className={isActive ? 'item-selected': "items"}
+      onClick={toggleClass}>
         {item.name}
       </li>
     );

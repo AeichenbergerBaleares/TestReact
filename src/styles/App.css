@@ -1,47 +1,135 @@
-.App {
-    font-family: sans-serif;
-  }
+ul
+{
+  list-style: none;
+  padding: 0;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+ul li
+{
+  padding: 8px 15px;
+  transition: 0.3ms ease-in all;
+  cursor: pointer;
+}
 
-  ul li {
-    padding: 8px 15px;
-    transition: 0.3ms ease-in all;
-    cursor: pointer;
-  }
+ul li:hover
+{
+  background: lightsalmon;
+  color:black
+}
 
-  ul li:hover {
-    background: red;
-  }
+:not(html)
+{
+  background-color: transparent;
+}
 
-  :not(html)
-  {
-    background-color: transparent;
-  }
+html
+{
+  background-color: #282c34;
+}
 
-  html
-  {
-    background-color: #282c34;
-  }
+li
+{
+  color:antiquewhite
+}
 
-  li
-  {
-    color:antiquewhite
-  }
+button, h1, input
+{
+  background-color: #ffffff;
+  text-align: center;
+}
 
-  button, h1, input
-  {
-    background-color: #ffffff;
-    text-align: center;
-  }
+h1
+{
+  background-color:rgba(240, 130, 130);
+}
 
-.centered
+.fullwindow, .fixtocenter
 {
   position: fixed;
+}
+
+.fullwindow
+{
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.fixtocenter
+{
   left: 50%;
   top: 25%;
   transform: translate(-50%, -50%);
+}
+
+.relativecenter
+{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.items
+{
+  text-align: center;
+}
+
+input[name="Mail"], input[name="Contraseña"]
+{
+  margin-bottom: 0.5rem;
+  width:50%
+}
+
+.cerrarSesion, .iniciarSesion
+{
+  position:absolute;
+  top:0.7vh;
+  left:85vw;
+  font-size:calc(27% + 0.8vw);
+}
+
+.consigna
+{
+  position:absolute;
+  background-color:coral;
+  width: 100vw;
+  font-size: 70%;
+  top:45%;
+}
+
+.consigna > h2
+{
+  text-align: center;
+  background-color: goldenrod;
+}
+
+.toDo
+{
+  padding-left: 2em;
+}
+
+.subTitle
+{
+  font-size: small;
+  color:wheat;
+}
+
+.forgotPassword
+{
+  cursor: pointer;
+  font-family:-apple-system;
+  text-decoration: underline;
+  color:wheat;
+  margin-top: 0.5rem;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Others */
+}
+
+.item-selected, .item-selected:hover
+{
+  background-color: lightgreen;
+  text-align: center;
 }
